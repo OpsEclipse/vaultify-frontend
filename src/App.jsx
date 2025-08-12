@@ -7,6 +7,7 @@ import { Context } from './context/Context'
 import {
     Routes,
     Route,
+	Navigate,
 } from 'react-router-dom';
 import { Profile } from './profile/Profile'
 import { Vault } from './vault/Vault'
@@ -27,6 +28,10 @@ function App() {
 			<Cover />
 			<Sidebar />
 			<Routes>
+				<Route
+					path="/"
+					element={<Navigate to="/profile" replace />}
+				/>
 				<Route path="/import" element={<Import />} />
 				<Route path="/profile" element={<Profile />} />
 				<Route path="/vault" element={<Vault />} />
