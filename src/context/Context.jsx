@@ -7,7 +7,7 @@ const playlistPath = 'http://localhost:8080/playlist';
 export const ContextProvider = (props) => {
 	const [isDark, setIsDark] = useState(true);
 	const [isSidebarCollapsed, setIsSidebarCollapsed] =
-		useState(false);
+		useState(true);
 	const [user, setUser] = useState('');
 	const [password, setPassword] = useState('');
 	const [isVerified, setIsVerified] = useState(false);
