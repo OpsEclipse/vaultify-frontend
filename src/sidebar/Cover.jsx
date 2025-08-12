@@ -1,5 +1,5 @@
 import { useContext } from 'react'
-import './Sidebar.css'
+import './sidebar.css'
 import { Context } from '../context/Context'
 export const Cover = () => {
     const { isSidebarCollapsed, setIsSidebarCollapsed } =
