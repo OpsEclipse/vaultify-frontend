@@ -1,0 +1,110 @@
+.import-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    opacity: 1;
+    filter: none;
+    transition: filter 0.5s ease;
+}
+.dim{
+    filter: blur(2px);
+}
+.import-main h1 {
+    color: var(--color-primary);
+    margin-bottom: 50px;
+    font-weight: 350;
+    font-size: 3.5rem;
+}
+.input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--color-sidebar);
+    border-radius: 12px;
+    color: var(--color-primary);
+    width: 640px;
+    height: 70px;
+    padding: 15px 25px;
+}
+.input input {
+    background-color: transparent;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    color: var(--color-primary);
+}
+.input input::placeholder {
+    color: var(--color-muted);
+}
+.input:focus-within {
+    box-shadow: 0 0 0 1px var(--color-primary);
+}
+
+.input button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: rgb(88, 233, 177);
+    color: rgb(25, 25, 25);
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.5s ease, transform 0.1s ease;
+}
+.input button:hover {
+    background-color: var(--color-primary-hover);
+}
+.input button:active {
+    transform: scale(0.95);
+}
+.playlist{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: var(--color-primary);
+    background-color: #2e2929;
+    border-radius: 20px;
+    padding: 40px;
+    gap: 20px;
+}
+.playlist img{
+    box-shadow: #000000 0px 0px 10px;
+    max-width: 270px;
+    max-height: 270px;
+    border-radius: 12px;
+}
+.playlist h4{
+    color: var(--color-muted);
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin: 0;
+}
+.playlist button{
+    background-color: var(--color-primary);
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all 0.5s ease, transform 0.1s ease;
+}
+.playlist button:hover {
+    background-color: var(--color-primary-hover);
+    border-radius: 20px;
+}
+.playlist button:active {
+    transform: scale(0.95);
+}
