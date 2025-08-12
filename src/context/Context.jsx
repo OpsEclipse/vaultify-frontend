@@ -41,6 +41,7 @@ export const ContextProvider = (props) => {
 		const match = url.match(
 			/(?:spotify:(?:track|playlist|album):|spotify\.com\/(?:track|playlist|album)\/)([a-zA-Z0-9]+)(?:\?.*)?/
 		);
+		console.log(match ? match[1] : null);
 		return match ? match[1] : null;
 	}
 	const verifyPlaylist = async () => {
