@@ -80,18 +80,9 @@ export const ContextProvider = (props) => {
 	};
 
 	const playSong = async (awsName, name, image, artists) => {
-		let req = {
-			params: {
-				awsName,
-			},
-		};
 		try {
-			let response = await axios.get(
-				`http://localhost:8080/song`,
-				req
-			);
 			setCurrentSong({
-				link: response.data,
+				link: `https://vaultifys3lol.s3.us-east-2.amazonaws.com/${awsName}.mp3`,
 				image,
 				artists,
 				name,
