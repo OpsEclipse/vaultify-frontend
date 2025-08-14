@@ -41,3 +41,5 @@ your all set! open the [frontend](https://vaultify-sparsh-six.vercel.app/profile
 User : lol
 
 Password: hii
+
+![Vaultify Logo](public/vaultify.png)
